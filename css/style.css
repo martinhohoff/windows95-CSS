@@ -22,13 +22,16 @@ body, html {
 	display: flex;
 	flex-flow: column;
 	margin: 0;
-	height: 100vh;
+	height: 100vh;	
+	overflow: scroll;
 }
 
 #desktop {
 	display: flex;
 	background-color: #008080;
 	height: 100vh;
+	overflow: scroll;
+	flex-wrap: wrap;
 }
 
 .icon {
@@ -48,20 +51,21 @@ body, html {
 	box-shadow: 2px 2px rgba(90,90,90, 0.5);
 	margin: 10px;
 	border-radius: 2px;
-	position: absolute;
+	position: fixed;
 	padding: 2px;
 	background-color: #C0C0C0;
+	overflow: scroll;
 }
 
 #folder1 {
-	left: 5vh;
-	top: 5vh;
+	left: 45px;
+	top: 25px;
 	z-index: 1;
 }
 
 #folder2 {
-	left: 10vh;
-	top: 10vh;
+	left: 90px;
+	top: 90px;
 	z-index: 2;
 }
 
@@ -108,6 +112,9 @@ body, html {
 	background-color: #FFFFFF;
 	padding: 10px;
 	display: flex;
+	overflow: scroll;
+	flex-wrap: wrap;
+	
 }
 
 .foldericon {
